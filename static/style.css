@@ -1,0 +1,138 @@
+/* --- Global Layout & Body --- */
+body {
+    margin: 0;
+    padding: 0;
+    background: #f5f7fa;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Headings --- */
+h1, h2, h3, h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+/* --- Buttons --- */
+.btn {
+    display: inline-block;
+    background: #007bff;
+    color: #fff !important;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Red button (Logout for example) */
+.btn-danger,
+a.btn-danger {
+    background: #dc3545 !important;
+}
+
+.btn-danger:hover {
+    background: #b02a37 !important;
+}
+
+/* --- Textarea & Inputs --- */
+textarea, input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    background: #fff;
+    transition: border 0.2s ease;
+}
+
+textarea:focus, input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* --- Lists --- */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f9fafc;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    border: 1px solid #e3e4e8;
+}
+
+/* Hover effect */
+ul li:hover {
+    background: #eef2f7;
+}
+
+/* --- Post Author Bold --- */
+ul li strong {
+    color: #333;
+}
+
+/* --- News Links --- */
+ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* --- Stream Status Badges (used in non-Bootstrap fallback) --- */
+.badge {
+    padding: 5px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.badge-live {
+    background: #28a745;
+}
+
+.badge-offline {
+    background: #6c757d;
+}
+
+/* --- Card Style for Sections (fallback if not using Bootstrap) --- */
+.section-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
